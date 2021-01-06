@@ -138,7 +138,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 105
+  controlID: 58
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 106
+  controlID: 64
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -188,7 +188,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 107
+  controlID: 38
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -357,7 +357,7 @@ MonoBehaviour:
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 0
+    m_VSlider: 1
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -370,7 +370,7 @@ MonoBehaviour:
       y: 21
       width: 1016
       height: 437
-    m_Scale: {x: 0.56901044, y: 0.56901044}
+    m_Scale: {x: 0.5963542, y: 0.5963542}
     m_Translation: {x: 508, y: 218.5}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -378,12 +378,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -892.778
-      y: -384
-      width: 1785.556
-      height: 768
+      x: -851.8428
+      y: -366.393
+      width: 1703.6855
+      height: 732.786
     m_MinimalGUI: 1
-  m_defaultScale: 0.56901044
+  m_defaultScale: 0.5963542
   m_LastWindowPixelSize: {x: 1016, y: 458}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
@@ -419,7 +419,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: ca2e0000
       m_LastClickedID: 0
       m_ExpandedIDs: 6cfbffff
       m_RenameOverlay:
@@ -1204,19 +1204,19 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scripts/Blur/GaussianBlur
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scripts/Blur/GaussianBlur
   m_LastFoldersGridSize: -1
   m_LastProjectPath: E:\Course-PostProcessingEffect
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b2330000
-    m_LastClickedID: 13234
+    m_SelectedIDs: c4330000
+    m_LastClickedID: 13252
     m_ExpandedIDs: 00000000b2330000b4330000b6330000b8330000ba330000bc33000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1272,7 +1272,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300007431000056760000628a000074710000524b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
