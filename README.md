@@ -21,6 +21,7 @@
 高斯模糊（Gaussian Blur）又名高斯平滑（Gaussian Smoothing），是一个图像模糊的经典算法。简单来说，高斯模糊算法就是对整幅图像进行加权平均运算的过程，每一个像素点的值，都是由其本身和领域内的其他像素值经过加权平均后得到。
 
 **在Unity的实现**
+
 原图：
 <center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/Assets/Shaders/Blur/GaussianBlur/13.jpg" style="width:500px"></center> 
 使用高斯核大小为7\*7：
