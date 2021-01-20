@@ -7,10 +7,15 @@
 ## 目录
 
 本篇教程采用连载的方式更新（更新至Kawase Blur）。
+
 [高斯模糊（第1-3节）](https://edu.uwa4d.com/lesson-detail/280/1297/0?isPreview=false)
+
 [盒式模糊（第4节）](https://edu.uwa4d.com/lesson-detail/280/1306/0?isPreview=0)
+
 [Kawase Blur（第5节）](https://edu.uwa4d.com/lesson-detail/280/1307/0?isPreview=0)
+
 径向模糊
+
 散景模糊
 
 ***
