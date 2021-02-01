@@ -313,11 +313,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 963194225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b08edd33dad6c134a8f3439094257f44, type: 3}
+  m_Script: {fileID: 11500000, guid: b45af2e005d82ef44a4177c05f5753b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BoxBlurShader: {fileID: 7200000, guid: 9c5cf69f49726c14e81a91be986b7ac9, type: 3}
-  BlurDiameter: 36
 --- !u!1 &1243018843
 GameObject:
   m_ObjectHideFlags: 0

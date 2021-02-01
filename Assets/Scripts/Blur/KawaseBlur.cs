@@ -16,6 +16,8 @@ public class KawaseBlur : MonoBehaviour
 
     private void OnRenderImage(RenderTexture input, RenderTexture output)
     {
+        Debug.Log(m_Material == null);
+
         Graphics.Blit(input, output, m_Material);
     }
 }
