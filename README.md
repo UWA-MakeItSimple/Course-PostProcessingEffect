@@ -2,11 +2,11 @@
 
 屏幕后处理效果（Screen Post Processing Effects），是游戏中实现屏幕特效的方法，有助于提升画面效果。[《屏幕后处理效果系列之图像模糊算法篇》](https://edu.uwa4d.com/course-intro/1/280)主要讲解的是图像模糊算法。在游戏中经常被应用的屏幕后处理特效，例如炫光（Bloom）、景深（Depth of Field）、镜头光晕（Glare Lens Flare）、体积光（Volume Ray）等效果，都用到了图像模糊算法。
 
-从图像处理领域的角度来看，图像模糊算法是一种低通滤波算法。经过低通滤波器处理后的图像效果看起来像是将图像变模糊了，故而被应用到屏幕后处理特效中。图像模糊算法有很多经典算法，例如：高斯模糊算法（Gaussian Blur）、盒式模糊（Box Blur）、Kawase Blur、径向模糊（Radial Blur）、散景模糊（Bokeh Blur）等。在本篇中将结合Demo学习相关算法及其优化算法，探究其应用与优化方式。
+从图像处理领域的角度来看，图像模糊算法是一种低通滤波算法。经过低通滤波器处理后的图像效果看起来像是将图像变模糊了，故而被应用到屏幕后处理特效中。图像模糊算法有很多经典算法，本篇教程介绍了高斯模糊算法（Gaussian Blur）、盒式模糊（Box Blur）、Kawase Blur和Dual Blur。在本篇中将结合Demo学习相关算法及其优化算法，探究其应用与优化方式。
 
 ## 目录
 
-本篇教程采用连载的方式更新（更新至Kawase Blur）。
+本篇教程介绍了如下四种算法。
 
 [高斯模糊（第1-3节）](https://edu.uwa4d.com/lesson-detail/280/1297/0?isPreview=false)
 
@@ -14,9 +14,7 @@
 
 [Kawase Blur（第5节）](https://edu.uwa4d.com/lesson-detail/280/1307/0?isPreview=0)
 
-径向模糊
-
-散景模糊
+[Dual Blur（第6节）](https://edu.uwa4d.com/lesson-detail/280/1315/0?isPreview=0)
 
 ***
 
@@ -47,5 +45,4 @@
 **在Unity的实现**
 使用高斯核大小为35\*35：
 <center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/Assets/Shaders/Blur/GaussianBlur/26.png" style="width:500px"></center>
-
 
