@@ -44,7 +44,7 @@ public class DualBlur : MonoBehaviour
 
             last = _blurBuffer2[level];
         }
-        Graphics.Blit(last, dest); ;
+        Graphics.Blit(last, dest, m_Material, 1); 
         for (var i = 0; i < MaxIterations; i++)
         {
             if (_blurBuffer1[i] != null)

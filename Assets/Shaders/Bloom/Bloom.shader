@@ -58,7 +58,7 @@
 				float4 compositeColor = tex2D(_CompositeTex, input.uv);
 
 				#if defined(_COMPOSITE_TYPE_COLORED_ADDITIVE) || defined(_COMPOSITE_TYPE_COLORED_SCREEN)
-				compositeColor.rgb = (compositeColor.r + compositeColor.g + compositeColor.b)* 0.3333 * _CompositeColor;
+				compositeColor.rgb = (compositeColor.r + compositeColor.g + compositeColor.b) * _CompositeColor *0.3333;
 				#endif
 
 				#if defined(_COMPOSITE_TYPE_SCREEN) || defined(_COMPOSITE_TYPE_COLORED_SCREEN)
