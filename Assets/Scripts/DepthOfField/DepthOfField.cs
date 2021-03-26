@@ -78,35 +78,11 @@ public class DepthOfField : MonoBehaviour
         }
         var focusDistanceTmp = CalculateFocusDistance();
         var MaxBgdCoC = (Aperture * focalLength) / (focusDistanceTmp - focalLength);
-        //var f = CalculateFocalLength();
-        //s1 = Mathf.Max(s1, f);
-        Debug.Log("_FocusDistance:" + focusDistanceTmp + "|_MaxBgdCoc:" + MaxBgdCoC);
+
         _material.SetFloat("_FocusDistance", focusDistanceTmp);
         _material.SetFloat("_MaxBgdCoc", MaxBgdCoC);
         _material.SetFloat("_PixelSize", PixelSize);
-
-        //var coeff = f * f / (_fNumber * (s1 - f) * kFilmHeight * 2);
-        //_material.SetFloat("_LensCoeff", coeff);
-
-        //var maxCoC = CalculateMaxCoCRadius(source.height);
-        //_material.SetFloat("_MaxCoC", maxCoC);
-        //_material.SetFloat("_RcpMaxCoC", 1 / maxCoC);
-
-        //var rcpAspect = (float)source.height / source.width;
-        //_material.SetFloat("_RcpAspect", rcpAspect);
-    }
-
-    void OnEnable()
-    {
-        // Check system compatibility.
-        if (!_shader.isSupported) return;
-        if (!SystemInfo.SupportsRenderTextureFormat(RenderTextureFormat.ARGBHalf)) return;
-
-        // Initialize temporary objects (only when not set up yet).
-
-
-        // Requires camera depth texture.
-        TargetCamera.depthTextureMode |= DepthTextureMode.Depth;
+        
     }
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
@@ -125,9 +101,7 @@ public class DepthOfField : MonoBehaviour
         Graphics.Blit(tmpRT0, tmpRT1, _material, 2);
         Graphics.Blit(tmpRT1, tmpRT0, _material, 3);
          _material.SetTexture("_BokehTexture", tmpRT0);
-        //Graphics.Blit(source, debug, _material, 4);
         Graphics.Blit(source, destination, _material, 4);
-        //Graphics.Blit(source, destination);
         RenderTexture.ReleaseTemporary(CocRT);
         RenderTexture.ReleaseTemporary(tmpRT0);
         RenderTexture.ReleaseTemporary(tmpRT1);
