@@ -30,6 +30,11 @@
 
 [3. Lens Flare —— Streak（拉丝）](https://edu.uwa4d.com/lesson-detail/285/1331/0?isPreview=0)
 
+[4. Silhouette Rendering（轮廓渲染）](https://edu.uwa4d.com/lesson-detail/285/1347/0?isPreview=0)
+
+[5. Radial Blur（径向模糊）](https://edu.uwa4d.com/lesson-detail/285/1348/0?isPreview=0)
+
+
 ***
 
 
