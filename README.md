@@ -30,6 +30,11 @@
 
 [3. Lens Flare —— Streak（拉丝）](https://edu.uwa4d.com/lesson-detail/285/1331/0?isPreview=0)
 
+[4. Silhouette Rendering（轮廓渲染）](https://edu.uwa4d.com/lesson-detail/285/1347/0?isPreview=0)
+
+[5. Radial Blur（径向模糊）](https://edu.uwa4d.com/lesson-detail/285/1348/0?isPreview=0)
+
+
 ***
 
 
@@ -153,3 +158,27 @@ Depth Of Field（景深）是游戏中常用的屏幕后处理特效之一。它
 
 调高平行光强度，得到效果：
 <center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/streak1.png" style="width:500px"></center>
+
+### [4. Silhouette Rendering（轮廓渲染）](https://edu.uwa4d.com/lesson-detail/285/1347/0?isPreview=0)
+
+轮廓渲染是一种常见的视觉效果，也称之为描边（Outline），常出现在非真实感渲染中。像《无主之地》系列这样漫画风格比较强烈的游戏中，运用了大量的轮廓渲染。
+
+**在Unity的实现**
+
+只绘制轮廓：
+<center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/outline.png" style="width:500px"></center>
+混合原图像进行描边：
+<center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/outline1.png" style="width:500px"></center>
+原图：
+<center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/outline2.png" style="width:500px"></center>
+调节轮廓颜色：
+<center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/outline3.png" style="width:500px"></center>
+
+### [5.Radial Blur（径向模糊）](https://edu.uwa4d.com/lesson-detail/285/1348/0?isPreview=0)
+
+Radial Blur（径向模糊）是一种常见的视觉效果，具体表现为从中心向外呈辐射条状模糊。
+
+得到效果如图：
+<center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/radial.png" style="width:500px"></center>
+动态调节变量_BlurRadius：
+<center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/radial1.gif" style="width:500px"></center>
