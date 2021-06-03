@@ -34,6 +34,9 @@
 
 [5. Radial Blur（径向模糊）](https://edu.uwa4d.com/lesson-detail/285/1348/0?isPreview=0)
 
+[6. Gamma Space起源](https://edu.uwa4d.com/lesson-detail/285/1359/0?isPreview=0)
+
+[7. Linear Space工作流](https://edu.uwa4d.com/lesson-detail/285/1360/0?isPreview=0)
 
 ***
 
@@ -182,3 +185,17 @@ Radial Blur（径向模糊）是一种常见的视觉效果，具体表现为从
 <center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/radial.png" style="width:500px"></center>
 动态调节变量_BlurRadius：
 <center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/radial1.gif" style="width:500px"></center>
+
+### [6.Gamma Space起源](https://edu.uwa4d.com/lesson-detail/285/1359/0?isPreview=0)
+
+本节我们介绍了Gamma Space起源的两个主流观点，CRT显示器理论和人眼灰阶感知理论，并了解了其背后对应的计算方式和现实意义。
+
+### [7.Linear Space工作流](https://edu.uwa4d.com/lesson-detail/285/1360/0?isPreview=0)
+
+所以为了保证更为真实、确切地还原现实物理世界的色彩，较好的制作流程是将输入、计算和输出都统一在线性空间下，之后再进行Gamma Correction，最后显示在显示器上。
+
+首先，我们要确保输入的数据位于线性空间，对于sRGB的纹理，需要进行Remove Gamma Correction（进行一个2.2次幂的运算），使其回到线性空间下。
+接着，通过Shader进行运算，这部分计算是处于线性空间的。
+然后，对结果进行Gamma Correction，最终通过显示器输出。这样得到一个与现实世界相近的结果。
+<center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/gammalinear.png" style="width:500px"></center>
+
