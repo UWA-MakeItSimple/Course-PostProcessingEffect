@@ -4,8 +4,8 @@
 	{
 		_MainTex("Texture Map", 2D) = "white" {}
 		_hue("Hue",Range(0.0,1.0)) = 1.0
-		_saturation("Saturation",Range(0.0,1.0)) = 1.0
-		_value("Value (Brightness)",Range(0.0,1.0)) = 1.0
+		_saturation("Saturation",Range(0.0,10.0)) = 1
+		_value("Value (Brightness)",Range(0.0,10.0)) = 1.1
 	}
 		SubShader
 		{
@@ -45,8 +45,11 @@
 				{
 					float4 color = tex2D(_MainTex, uv * _MainTex_ST.xy + _MainTex_ST.zw);
 					float3 source = RGBToHSV(color.rgb);
-					source *= float3(_hue, _saturation, _value);
-					color.rgb = HSVToRGB(source);
+					//source = float3(source.r, source.g * _saturation, source.b);
+					//source = float3(source.r, source.g, source.b*_value);
+					source = float3(source.r, source.g, ((source.b - 0.5)* _value + 0.5));
+					color.rgb = HSVToRGB(saturate(source));
+					//color.rgb = float3(1 - color.r, 1 - color.g, 1 - color.b);
 					return color;
 				}
 
