@@ -199,3 +199,17 @@ Radial Blur（径向模糊）是一种常见的视觉效果，具体表现为从
 然后，对结果进行Gamma Correction，最终通过显示器输出。这样得到一个与现实世界相近的结果。
 <center><img src="https://github.com/UWA-MakeItSimple/Course-PostProcessingEffect/blob/main/%E6%95%88%E6%9E%9C%E5%9B%BE/gammalinear.png" style="width:500px"></center>
 
+### [8.颜色模型](https://edu.uwa4d.com/lesson-detail/285/1462/0?isPreview=0)
+
+前两节中，我们梳理了两种工作流，这样可以保证输入到着色器中的颜色数据是符合预期的。着色器将对输入的颜色数据进行处理，接下来的章节我们将聊聊一些颜色的表达方式和常见的处理方式。
+
+介绍了RGB颜色模型、HSV颜色模型以及两者的相互转换。
+
+### [9.色彩分级](https://edu.uwa4d.com/lesson-detail/285/1463/0?isPreview=0)
+
+了解颜色模型和相互之间的转换方式之后，我们在后处理中对最终的画面做一些色彩分级（Color Grading）处理。色彩分级（Color Grading）是一个比较广泛的话题，主要目的是提升画面的表现，包括调整色调、饱和度、亮度、对比度、白平衡等很多操作。本节列举了一些常见的 Color Grading 操作。
+
+**饱和度和亮度**
+
+
+
